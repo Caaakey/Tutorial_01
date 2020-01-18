@@ -90,9 +90,9 @@ namespace Tutorial_01
             //}
             #endregion
 
+            #region 열거형 및 스위치문
             //  switch ?
             //  조건문 + 열거형 (Enum)
-
 
             //  내가 지금 장착하고있는 무기
             //Weapon weapon = Weapon.None;
@@ -137,10 +137,42 @@ namespace Tutorial_01
             //    value++;
             //    Console.WriteLine(value.ToString());
             //}
+            #endregion
 
             //  솔루션 탐색기 단축키
             //  Ctrl + Alt + L
+
+            //  함수
+            //  Function()
+
+            //  함수를 사용할 때는
+            PrintName();
+            int result = Add(3, 5);
+
+            //  Minus 함수 만들어보세요!
+
+
         }
+        
+        //     자료형, 이름, 파라메터
+        //  1.  자료형 ? 리턴할 변수형
+        //  2.  이름은 함수의 이름
+        //  3.  파라메터 (선택) 이 함수를 사용할 때 필요할 수도 있는 객체
+        static void PrintName()
+        {
+            Console.WriteLine("Name");
+        }
+
+        static int Add(int a, int b)
+        {
+            return a + b;
+        }
+
+        static int Minus(int a, int b)
+            => a - b;
+
+        //  { return a - b; }
+
     }
 
 }
